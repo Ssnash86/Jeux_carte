@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!
+{% endblock %}
+
+{% block body %}
+	<main class="lg:flex ">
+		<section class="flex flex-col justify-end mx-auto">
+			<article class="border-2 rounded-2xl m-4 bg-[grey] lg:h-[25vh] lg:w-[10vw]" id="deck_enemy">
+            <p class="text-white flex  justify-center h-full w-full p-4 text-2xl font-bold uppercase underline">Deck</p>
+            </article>
+			<article class="border-2 rounded-2xl m-4 bg-[grey] lg:h-[25vh] lg:w-[10vw]" id="defausse_enemy">
+            <p class="text-white flex  justify-center h-full w-full p-4 text-2xl font-bold uppercase underline">Defausse</p>
+            </article>
+		</section>
+		<section class="flex flex-col lg:w-[60vw] mx-auto" >
+			<section>
+            <section class="flex ">
+					<div id="carte_enemi" class="grid lg:grid-cols-5 gap-4 grid-cols-2"></div>
+				</section>
+				<div class="border-2 rounded-2xl h-[27vh] w-full grid lg:grid-cols-5 grid-cols-2 gap-4 ">
+					<article class="border-2 rounded-2xl  m-4 bg-[grey]" id="emp_enemy_1">
+                    <p class="text-white flex  items-center pl-8 h-full w-full max-sm:hidden text-2xl font-bold uppercase underline rotate-[125deg]"> Emplacement</p>
+                    </article>
+					<article class="border-2 rounded-2xl m-4 bg-[grey]" id="emp_enemy_2">
+                    <p class="text-white flex  items-center pl-8 h-full w-full max-sm:hidden text-2xl font-bold uppercase underline rotate-[125deg]"> Emplacement</p>
+                    </article>
+					<article class="border-2 rounded-2xl m-4 bg-[grey]" id="emp_enemy_3">
+                    <p class="text-white flex  items-center pl-8 h-full w-full max-sm:hidden text-2xl font-bold uppercase underline rotate-[125deg]"> Emplacement</p>
+                    </article>
+					<article class="border-2 rounded-2xl m-4 bg-[grey]" id="emp_enemy_4">
+                    <p class="text-white flex  items-center pl-8 h-full w-full max-sm:hidden text-2xl font-bold uppercase underline rotate-[125deg]"> Emplacement</p>
+                    </article>
+					<article class="border-2 rounded-2xl m-4 bg-[grey]" id="emp_enemy_5">
+                    <p class="text-white flex  items-center pl-8 h-full w-full max-sm:hidden text-2xl font-bold uppercase underline rotate-[125deg]"> Emplacement</p>
+                    </article>
+					
+				</div>
+			</section>
+			<section>
+				<div class="border-2 rounded-2xl h-[27vh] w-full grid lg:grid-cols-5 grid-cols-2 gap-4 ">
+					<article class="border-2 rounded-2xl m-4 bg-[grey]" id="emp_1">
+                    <p class="text-white flex  items-center pl-8 h-full w-full max-sm:hidden text-2xl font-bold uppercase underline rotate-45"> Emplacement</p>
+                    </article>
+					<article class="border-2 rounded-2xl m-4 bg-[grey]" id="emp_2">
+                    <p class="text-white flex  items-center pl-8 h-full w-full max-sm:hidden text-2xl font-bold uppercase underline rotate-45"> Emplacement</p>
+                    </article>
+					<article class="border-2 rounded-2xl m-4 bg-[grey]" id="emp_3">
+                    <p class="text-white flex  items-center pl-8 h-full w-full max-sm:hidden text-2xl font-bold uppercase underline rotate-45"> Emplacement</p>
+                    </article>
+					<article class="border-2 rounded-2xl m-4 bg-[grey]" id="emp_4">
+                    <p class="text-white flex  items-center pl-8 h-full w-full max-sm:hidden text-2xl font-bold uppercase underline rotate-45"> Emplacement</p>
+                    </article>
+					<article class="border-2 rounded-2xl m-4 bg-[grey]" id="emp_5">
+                    <p class="text-white flex  items-center pl-8 h-full w-full max-sm:hidden text-2xl font-bold uppercase underline rotate-45"> Emplacement</p>
+                    </article>
+				</div>
+				<section class="flex w-[full]  ">
+					<div id="carte" class="grid lg:grid-cols-5 gap-4 grid-cols-2 "></div>
+				</section>
+			</section>
+		</section>
+	</section>
+	<section class="flex flex-col  mx-auto">
+		<article class="border-2 rounded-2xl m-4 bg-[grey] lg:h-[25vh] lg:w-[10vw] rotate-180" id="defausse">
+        <p class="text-white flex  justify-center h-full w-full p-4 text-2xl font-bold uppercase underline">Defausse</p>
+        </article>
+		<article class="border-2 rounded-2xl m-4 bg-[grey] lg:h-[25vh] lg:w-[10vw] rotate-180" id="deck">
+        <p class="text-white flex  justify-center h-full w-full p-4 text-2xl font-bold uppercase underline">Deck</p>
+        </article>
+	</section>
+</main>
+<script src="{{ asset("./card.js")}}"></script>
+{% endblock %}
